@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <FrameLayout
+            android:id="@+id/headerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/colHeaderLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <com.yiyezhou.multidirectionrecyclerview.EzrHorizontalScrollView
+                android:id="@+id/rightScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/contentListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </com.yiyezhou.multidirectionrecyclerview.EzrHorizontalScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+            android:id="@+id/footerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MultidirectionRecyclerView">
+        <attr name="mdr_col_header_width" format="dimension"/>
+        <attr name="mdr_cell_height" format="dimension"/>
+        <attr name="mdr_max_header_height" format="dimension"/>
+        <attr name="mdr_max_footer_height" format="dimension"/>
+    </declare-styleable>
+</resources>
